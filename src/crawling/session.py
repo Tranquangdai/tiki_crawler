@@ -21,7 +21,7 @@ class BaseSession(requests.Session):
         self._logger = get_logger(self.__class__.__name__)
 
 
-class InstagramSession(BaseSession):
+class TikiSession(BaseSession):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

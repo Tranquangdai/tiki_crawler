@@ -13,10 +13,6 @@ def remove_skip_values(obj, skip_values=(None, [], {})):
         return obj
 
 
-def user_url_by_username(username):
-    return HTML_ACCOUNT_INFO.format(username)
-
-
 def _build_query_string(**kwargs):
     kwargs = remove_skip_values(kwargs)
     text = []

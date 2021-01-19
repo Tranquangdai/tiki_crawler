@@ -1,10 +1,9 @@
-import pandas as pd
 from src.crawling.apis.web import TikiCrawlingApi
 
 api = TikiCrawlingApi()
 
 
-def _test_get_products_by_cate():
+def test_get_products_by_cate():
     gen = api.get_products_by_cate(category='1801')
     result = next(gen)
     assert len(result) == 300

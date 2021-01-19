@@ -1,6 +1,6 @@
 import pdb
 
-from src.crawling.session import InstagramSession
+from src.crawling.session import TikiSession
 from src.crawling.static.endpoints import (product_url, products_by_cate_url,
                                            reco_by_pid_url)
 
@@ -11,7 +11,7 @@ class TikiCrawlingApi:
         self.new_session()
 
     def new_session(self):
-        self._sess = InstagramSession()
+        self._sess = TikiSession()
 
     def get_products_by_cate(self, category=None, limit=300):
         current_page = 1
